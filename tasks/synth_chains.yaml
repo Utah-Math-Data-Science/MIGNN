@@ -1,0 +1,31 @@
+hydra:
+  job:
+    chdir: False
+  run:
+    dir: /root/workspace/out/chains/hydra/
+setup:
+  seed: 42
+  device: cuda
+  sweep: False
+  train: True
+  wandb_dir: /root/workspace/out/
+data:
+  chain_len: 100
+  num_chains: 20
+  num_classes: 2
+  feature_dim: 100
+  noise: 0.0
+load:
+  split: fixed_05/10/85
+  load_checkpoint: False
+  checkpoint_path: /root/workspace/out/ambiguous_chkpt.pt
+train:
+  epochs: 2000
+  patience: 200
+  lr : .008
+  wd : 5e-4
+model:
+  hidden_channels: 16
+  dropout: 0.4
+  max_iter: 100
+  tol: 1e-6
