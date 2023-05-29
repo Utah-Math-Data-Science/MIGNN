@@ -5,7 +5,7 @@ The model is simplified to <a class="anchor" id="eq1" href="#eq1"></a>
 
 $$\begin{equation} Z := \mathbb{A}\mathbb{B}Z \end{equation}$$
 
-where $\mathbb{A}=\mathbb{J}_{\mathbb{C}}=\text{prox}^\alpha_{\partial f}$ and $\mathbb{B}=\text{agg}_W(Z,S)+b(X,S)$.
+where $\mathbb{A}=\mathbb{J_C}=\text{prox}^\alpha_{\partial f}$ and $\mathbb{B}=\text{agg}_W(Z,S)+b(X,S)$.
 Written in full we can express the model as
 
 $$\begin{equation} Z := \mathbb{J}_{\mathbb{A}}\left(\text{agg}_W(Z,S) + b(X,S)\right) \end{equation} $$
